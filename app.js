@@ -5,7 +5,7 @@
         .controller('NarrowItDownController', NarrowItDownController)
         .service('MenuSearchService', MenuSearchService)
         .directive('foundItems', FoundItems);
-
+//-------------------------------------------------------------------------------------
     function FoundItems() {
         var directiveInfo = {
             restrict: 'E',
@@ -19,7 +19,6 @@
             controllerAs: 'menu',
             bindToController: true
         };
-
         return directiveInfo;
     }
 //--------------------------------------------------------------------------------------
@@ -45,7 +44,6 @@
                 }
             });
         }
-
     }
 
 //----------------------------------------------------
@@ -65,7 +63,6 @@
                         foundItems.push(result.data['menu_items'][i]);
                     }
                 }
-
                 return foundItems;
             });
         };
